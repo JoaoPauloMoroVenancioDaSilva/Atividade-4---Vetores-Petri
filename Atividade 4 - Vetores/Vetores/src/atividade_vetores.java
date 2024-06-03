@@ -55,7 +55,7 @@ public class atividade_vetores {
                 do {
                     System.out.println("Posição inválida, tente novamente: ");
                     muda1 = scanner.nextInt();
-                } while (muda1 <= 0);
+                } while (muda1 <= 0 || muda1 > valor);
             }
             soma = soma - shitpost[muda1 - 1];
             System.out.println("Qual é o número da nova posição? ");
@@ -73,7 +73,7 @@ public class atividade_vetores {
                     do {
                         System.out.println("Posição inválida, tente novamente: ");
                         muda2 = scanner.nextInt();
-                    } while (muda2 <= 0);
+                    } while (muda2 <= 0 || muda2 > valor);
                 }
                 soma = soma - shitpost[muda2 - 1];
                 System.out.println("Qual é o número da nova posição? ");
@@ -82,10 +82,10 @@ public class atividade_vetores {
             }
         }
 
-        media = soma/valor;
+        media = soma/valor; //MÉDIA SEGUNDO
 
         System.out.println("A soma desses valores é: " + soma + "."); //SOMA SEGUNDO
 
-        System.out.println("A média de todos esses valores é: " + media + "."); //MEDIA SEGUNDO
+        System.out.println("A média de todos esses valores é: " + media + "."); //MÉDIA SEGUNDO
     }
 }
